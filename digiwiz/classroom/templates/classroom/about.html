@@ -1,0 +1,172 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <!--=======Page Heading
+    ===============================================-->
+    <section class="page-heading-section bg-image before-bg" style="background-image: url({% static 'images/header/p-header5.png' %});">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="page-heading">
+                        <h2 class="page-name text-capitalize"><font color = "white">About us</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=======About Page
+    ================================-->
+    <div class="about-page page-wrapper">
+        <section id="standard-section" class="our-standard-section s-pd1">
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="section-heading-area text-center">
+                        <h2 class="section-heading text-capitalize">DigiWiz: The Open-source Learning Platform</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <a href="https://www.youtube.com/watch?v=Ey1lkwYGSC0" class="video-btn before-bg">
+                        <img class="img-fluid border-radius" src="{% static 'images/thumbnail-video.jpg' %}" width="600" height="321" alt="img">
+                        <span class="play-icon">
+                                <i class="fa fa-play-circle-o"></i>
+                            </span>
+                    </a>
+                </div><!--/.col-lg-6-->
+                <div class="col-lg-6 col-md-12">
+                    <div id="accordion" class="our-standard-content" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default single-standard">
+                            <div class="panel-heading" role="tab">
+                                <h3 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><font color = "5da2d5">Importance of Education</a>
+                                </h3>
+                            </div><!--/.panel-heading-->
+                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel">
+                                <div class="single-standard-content">
+                                    <font color = "f78888"><b><p>Education serves as the means to bring about the desired change in society, to develop a generation of virtuous individuals and thus contribute to the development of good human beings. The importance of education to youths manifests itself in terms of the need to cultivate the youths of society into mature individuals.</p>
+                                </div>
+                            </div><!--/.panel-collapse-->
+                        </div><!--/.single-standard-->
+                        <div class="panel panel-default single-standard">
+                            <div class="panel-heading" role="tab">
+                                <h3 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><font color = "5da2d5">United Nation's Sustainable Development Goal</a>
+                                </h3>
+                            </div><!--/.panel-heading-->
+                            <div id="collapseTwo" class="panel-collapse collapse show" role="tabpanel">
+                                <div class="single-standard-content">
+                                    <font color = "f78888"><b><p>By 2030, ensure that all girls and boys have access to quality early childhood development, care and pre-primary education so that they are ready for primary education</p>
+                                </div>
+                            </div><!--/.panel-collapse-->
+                        </div><!--/.single-standard-->
+                        <div class="panel panel-default single-standard">
+                            <div class="panel-heading" role="tab">
+                                <h3 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><font color = "5da2d5">The Solution: DigiWiz</a>
+                                </h3>
+                            </div><!--/.panel-heading-->
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel">
+                                <div class="single-standard-content">
+                                    <font color = "f78888"><b><p>	In order to support the United Nations’ sustainable development goal, our group will develop DigiWiz, an open-source learning platform. The platform’s goal is to help people learn certain subjects for free with the help of registered instructors. These instructors will have the freedom to add courses/topics that they want to share with those who are willing to learn. For it to be a success, the contents of the instructors’ created courses will be monitored by the system admin to prevent any duplication of courses and possible fraud.</p>
+                                </div>
+                            </div><!--/.panel-collapse-->
+                        </div><!--/.single-standard-->
+                    </div><!--/.our-standard-content-->
+                </div><!--/.col-lg-6-->
+            </div><!--/.row-->
+    </div><!--/.container-->
+    </section><!--/.page-heading-area-->
+
+    <!--====Counter Section
+    ====================================-->
+    <section class="counter-section before-bg bg-image s-pd145" style="background-image: url(images/digiwizlogo1.png);">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-lg-10">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-3 col-6">
+                            <div class="single-counter">
+                                <h2><span class="counter">{{ courses }}</span></h2>
+                                <p>courses</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-3 col-6">
+                            <div class="single-counter">
+                                <h2><span class="counter">{{ students }}</span></h2>
+                                <p>students</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-3 col-6">
+                            <div class="single-counter">
+                                <h2><span class="counter">{{ teachers }}</span></h2>
+                                <p>Teachers</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-3 col-6">
+                            <div class="single-counter">
+                                <h2><span class="counter">{{ quizzes }}</span></h2>
+                                <p>Quizzes</p>
+                            </div>
+                        </div>
+                    </div><!--/.row-->
+                </div><!--/.col-lg-10-->
+            </div><!--/.row-->
+        </div><!--/.container-->
+    </section><!--/.counter-section-->
+
+    <!--====Services Section
+      ====================================-->
+    <section id="services-section" class="services-section-area s-pd1">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-lg-8">
+                    <div class="section-heading-area text-center">
+                        <h2 class="section-heading text-capitalize">Subjects Offered</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <div class="single-service text-center">
+                        <div class="icon">
+                            <img src="{% static 'images/icon/englishicon.png' %}" alt="english-icon">
+                        </div>
+                        <h3>English</h3>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="single-service text-center">
+                        <div class="icon">
+                            <img src="{% static 'images/icon/mathicon.png' %}" alt="math-icon">
+                        </div>
+                        <h3>Mathematics</h3>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="single-service text-center">
+                        <div class="icon">
+                            <img src="{% static 'images/icon/scienceicon.png' %}" alt="science-icon">
+                        </div>
+                        <h3>Science</h3>
+                    </div>
+                </div>
+            </div><!--/.row-->
+        </div><!--/.container-->
+    </section><!--/#services-section-->
+{% endblock %}
+
+{% block join_us %}
+    <div class="footer-top-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <h2>Become A Part of DigiWiz Community Today</h2>
+                    </div><!--/.col-lg-9-->
+                    <div class="col-lg-3 text-right">
+                        <a href="{% url 'register' %}" class="btn btn-default">get started</a>
+                    </div><!--/.col-lg-3-->
+                </div><!--/.row-->
+            </div><!--/.container-->
+        </div><!--/.footer-top-area-->
+{% endblock %}
